@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: CircularSp-Book, sans-serif;
+  /* font-family: Helvetica Neue,
+  helvetica,
+  arial,
+  Hiragino Kaku Gothic ProN,
+  Meiryo,
+  MS Gothic; */
+}
+
+ @font-face {
+   font-family: CircularSp-Book;
+   src: url(../fonts/CircularSp-Book.woff2);
+ }
+
+ @font-face {
+   font-family: CircularSpTitle-Bold;
+   src: url(../fonts/CircularSpTitle-Bold.woff2);
+ }
+
+ @font-face {
+   font-family: CircularSp-Bold;
+   src: url(/assets/fonts/CircularSp-Bold.woff2);
+ }
+
+ @font-face {
+   font-family: CircularSpTitle-Black;
+   src: url(/assets/fonts/CircularSpTitle-Black.woff2);
+ }
+
+ /* * {
+   font-family: CircularSp-Bold;
+ } */
+
+body {
+  background: rgb(3, 3, 3);
+}
+
+header ul {
+  font-family: "Anek Tamil", sans-serif;
+  /* font-size: 16px; */
+  margin: 30px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+header ul li {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.librery,
+.first-menu,
+li {
+  list-style-type: none;
+  font-weight: 600;
+  transition: color 200ms;
+  color: #b3b3b3;
+}
+
+img {
+  color: inherit;
+  /*herda a cor da div pai (ul) */
+}
+
+span {
+  color: inherit;
+}
+
+p {
+  color: #b3b3b3;
+}
+
+.librery li {
+  flex: 1;
+}
+
+.librery {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  margin: 30px;
+}
+
+.librery span {
+  font-family: "Anek Tamil", sans-serif;
+  color: #b3b3b3;
+}
+
+li:hover {
+  color: #ffffff;
+}
+
+.simbolos {
+  display: flex;
+  gap: 20px;
+}
+
+.option {
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  margin: 30px;
+  gap: 30px;
+  margin-bottom: 0;
+}
+
+.option li {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+  gap: 10px;
+  width: 20%;
+  height: 15px;
+}
+
+.first {
+  flex: 1;
+}
+
+.search img {
+  width: 15px;
+}
+
+.circular {
+  gap: 15px;
+  border-radius: 50% !important;
+}
+
+.playlists img {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+.circular img {
+  border-radius: 50%;
+}
+
+.circular img {
+  gap: 20px;
+}
+
+.playlists {
+  /* overflow: scroll; */
+  max-height: 35rem;
+  overflow-x: hidden;
+  width: 21%;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 30px 30px 20px;
+}
+
+.playlists h3 {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.playlists .song-green  h3 {
+  color: rgba(20, 238, 20, 0.897);
+}
+
+.playlists p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.playlists li {
+  gap: 10px;
+}
+
+nav ul li {
+  display: flex;
+  flex-direction: row;
+}
+
+nav {
+  height: 35rem;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  opacity: 0%;
+}
+
+::-webkit-scrollbar-thumb {
+  background: 5px grey;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  left: 0;
+  /* height: 60px; */
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+  /* margin: 20px 30px; */
+  margin-right: 10px;
+  border-radius: 5px;
+  /* margin-top: 50px; */
+}
+
+footer h3 {
+  font-weight: 500;
+  color: #b3b3b3;
+  margin-top: 3px;
+}
+
+footer p {
+  font-weight: 300;
+}
+
+.music-title {
+  color: #fff;
+}
+
+.singer {
+  color: #a7a7a7;
+  font-size: 12px;
+}
+
+.singer:hover, .music-title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.plus img {
+  width: 15px;
+  height: 15px;
+}
+
+.plus {
+  margin: 0 20px ;
+}
+
+.menu-center {
+  align-items: center;
+  justify-content: center;
+}
+/* .home {
+  font-family: CircularSp;
+} */
