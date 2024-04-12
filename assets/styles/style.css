@@ -11,27 +11,27 @@
   MS Gothic; */
 }
 
- @font-face {
-   font-family: CircularSp-Book;
-   src: url(../fonts/CircularSp-Book.woff2);
- }
+@font-face {
+  font-family: CircularSp-Book;
+  src: url(../fonts/CircularSp-Book.woff2);
+}
 
- @font-face {
-   font-family: CircularSpTitle-Bold;
-   src: url(../fonts/CircularSpTitle-Bold.woff2);
- }
+@font-face {
+  font-family: CircularSpTitle-Bold;
+  src: url(../fonts/CircularSpTitle-Bold.woff2);
+}
 
- @font-face {
-   font-family: CircularSp-Bold;
-   src: url(/assets/fonts/CircularSp-Bold.woff2);
- }
+@font-face {
+  font-family: CircularSp-Bold;
+  src: url(/assets/fonts/CircularSp-Bold.woff2);
+}
 
- @font-face {
-   font-family: CircularSpTitle-Black;
-   src: url(/assets/fonts/CircularSpTitle-Black.woff2);
- }
+@font-face {
+  font-family: CircularSpTitle-Black;
+  src: url(/assets/fonts/CircularSpTitle-Black.woff2);
+}
 
- /* * {
+/* * {
    font-family: CircularSp-Bold;
  } */
 
@@ -149,6 +149,11 @@ li:hover {
   border-radius: 5px;
 }
 
+/* .song-green img .playing-now {
+  display: flex;
+  flex-direction: row;
+} */
+
 .circular img {
   border-radius: 50%;
 }
@@ -170,17 +175,18 @@ li:hover {
 
 .playlists h3 {
   color: #ffffff;
-  font-weight: 300;
+  font-weight: 100;
   font-size: 18px;
 }
 
-.playlists .song-green  h3 {
-  color: rgba(20, 238, 20, 0.897);
+.playlists .song-green h3 {
+  /* color: rgba(20, 238, 20, 0.897); */
+  color: #1FB549;
 }
 
 .playlists p {
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 100;
 }
 
 .playlists li {
@@ -196,7 +202,6 @@ nav {
   height: 35rem;
 }
 
-
 ::-webkit-scrollbar {
   width: 8px;
   opacity: 0%;
@@ -207,12 +212,18 @@ nav {
 }
 
 footer {
+  justify-content: space-between;
+  padding: 20px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+footer,
+.first-footer {
   display: flex;
   align-items: center;
-  width: 100%;
-  bottom: 0;
-  padding: 20px;
-  left: 0;
   /* height: 60px; */
 }
 
@@ -244,7 +255,8 @@ footer p {
   font-size: 12px;
 }
 
-.singer:hover, .music-title:hover {
+.singer:hover,
+.music-title:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -255,13 +267,42 @@ footer p {
 }
 
 .plus {
-  margin: 0 20px ;
+  margin: 0 20px;
 }
 
-.menu-center {
+.menu-footer .reproduzir {
   align-items: center;
   justify-content: center;
 }
+
+.reproduzir img {
+  height: 20px;
+  width: 20px;
+}
+
+.reproduzir .play {
+  height: 35px;
+  width: 35px;
+}
+
+.reproduzir {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reproduzir .sides {
+  opacity: 0.3;
+}
+
+.reproduzir .icons-back-next {
+  height: 17px;
+  width: 17px;
+}
+
+
+
 /* .home {
   font-family: CircularSp;
 } */
