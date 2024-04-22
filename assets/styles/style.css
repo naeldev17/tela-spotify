@@ -48,7 +48,7 @@ body {
   position: relative;
   /* grid-template-rows: 1fr 1fr; */
   height: 100vh;
-  background: rgb(3, 3, 3);
+  /* background: rgb(3, 3, 3); */
 }
 
 .father {
@@ -86,7 +86,6 @@ li {
   font-weight: 600;
   transition: color 200ms;
   color: #b3b3b3;
-
 }
 
 img {
@@ -104,7 +103,10 @@ p {
 
 .father-said {
   /* display: grid; */
-  height: 100vh;
+  /* height: 100%; */
+  /* height: 4rem; */
+  height: 48rem;
+  overflow: hidden;
   width: 100%;
 }
 
@@ -112,9 +114,9 @@ p {
   flex: 1;
 }
 
-.librery li {
+/* .librery li {
   flex: 1;
-}
+} */
 
 .librery {
   display: flex;
@@ -132,7 +134,15 @@ p {
 }
 
 li:hover {
+  cursor: pointer;
   color: #ffffff;
+}
+
+.librery div:hover {
+  cursor: pointer;
+  transform: scale(1.09);
+  opacity: bold;
+  ;
 }
 
 .simbolos {
@@ -162,11 +172,22 @@ li:hover {
   margin-top: 20px;
 }
 
+.recentes {
+  display: flex;
+  gap: 5px;
+  all: 0.2s;
+}
+
+.recentes:hover {
+  transform: scale(1.01);
+  filter: contrast(1.8);
+}
+
 .search {
   align-items: center;
 }
 
-.search .lupa{
+.search .lupa {
   flex: 1;
   margin-bottom: 10px;
 }
@@ -207,9 +228,10 @@ li:hover {
 
 .playlists {
   /* overflow: scroll; */
-  max-height: 35rem;
+  max-height: 40rem;
   overflow-x: hidden;
   width: 100%;
+  /* height: auto; */
   gap: 15px;
   display: flex;
   flex-direction: column;
@@ -249,7 +271,11 @@ nav ul li {
 
 nav {
   width: 100%;
-  height: 35rem;
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+  /* height: 40rem; */
+  /* overflow: hidden; */
+  height: 42rem;
 }
 
 ::-webkit-scrollbar {
@@ -266,7 +292,7 @@ footer {
   justify-content: space-between;
   padding: 10px;
   bottom: 0;
-  /* position: absolute; */
+  position: absolute;
   width: 100%;
   background-color: #000000;
 }
@@ -297,7 +323,7 @@ footer p {
   font-weight: 300;
 }
 
-.music-title {
+.music-hashtag {
   color: #fff;
 }
 
@@ -307,7 +333,7 @@ footer p {
 }
 
 .singer:hover,
-.music-title:hover {
+.music-hashtag:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -357,6 +383,8 @@ footer p {
 }
 
 .principal {
+  overflow: scroll;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -372,14 +400,14 @@ footer p {
 }
 
 .album {
-  /* background-color: #070d5e; */
+  background: linear-gradient(90deg, rgba(23, 51, 161, 1) 54%, rgba(18, 28, 153, 1) 97%);
   /* height: 55%; */
-  background-color: grey;
   width: 100%;
 }
 
 .img-album {
-  padding: 40px 25px;
+  background: linear-gradient(90deg, rgba(23, 51, 161, 1) 54%, rgba(18, 28, 153, 1) 97%);
+  padding: 5px 25px 23px 25px;
   display: flex;
   align-items: end;
   gap: 30px;
@@ -389,6 +417,14 @@ footer p {
 .img-album img {
   width: 232px;
   height: 232px;
+  border-radius: 2%;
+  transition: all 0.2s;
+  background-color: #000000;
+  box-shadow: 1px 3px 30px rgb(36, 33, 33);
+}
+
+.img-album img:hover {
+  transform: scale(1.02);
 }
 
 .texto h3 {
@@ -442,8 +478,8 @@ footer p {
 .seta-esquerda,
 .seta-direita {
   border: none;
-  height: 35px;
-  width: 35px;
+  height: 32px;
+  width: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -454,10 +490,10 @@ footer p {
 }
 
 .setas {
-  margin: 5px 30px;
+  margin: 5px 25px;
   display: flex;
-  gap: 15px;
-  width: 60%;
+  gap: 10px;
+  width: 59%;
 }
 
 .icon-install img {
@@ -474,18 +510,23 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 7px;
+  gap: 4px;
   margin: 10px 10px;
   border: none;
-  height: 38px;
-  width: 150px;
-  border-radius: 20%;
+  height: 32px;
+  width: 160px;
+  border-radius: 50px;
   background: #000000;
+}
+
+.button-install p {
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .icons-header {
   display: flex;
-  /* justify-content: space-between; */
+  padding: 10px 0;
 }
 
 .sino {
@@ -500,7 +541,269 @@ footer p {
 }
 
 .icon-install {
+  /* padding: 5px; */
+  width: 300px;
+  gap: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.button-install:hover {
+  transform: scale(1.08);
+}
+
+.sino:hover,
+.perfil:hover {
+  transform: scale(1.06);
+}
+
+.perfil {
+  height: 30px;
+  width: 30px;
+  background-color: #000000;
+  border: none;
+  border-radius: 100%;
+}
+
+.icons-principal {
+  background: rgb(62, 72, 101);
+  background: linear-gradient(193deg, rgb(6, 31, 107) 22%, rgb(8, 12, 77) 85%);
+  height: 100px;
+  width: 100%;
+}
+
+.tocar-album img {
+  margin-left: 20px;
+  /* color: green; */
+  height: 58px;
+  width: 58px;
+}
+
+.icon-save img {
+  height: 32px;
+  width: 32px;
+  opacity: 0.7;
+}
+
+.tres-pontos img {
+  height: 22px;
+  width: 22px;
+  opacity: 0.7;
+}
+
+.icons-principal {
+  display: flex;
+  align-items: center;
+}
+
+.lista {
+  display: flex;
+  align-items: center;
+  width: 13px;
+  height: 16px;
+  gap: 6px;
+}
+
+.lista img {
+  height: 10px;
+  right: 10px;
+}
+
+.lista:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.three-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 72%;
+}
+
+.meio {
+  background: rgb(62, 72, 101);
+  background: linear-gradient(193deg, rgb(6, 31, 107) 22%, rgb(8, 12, 77) 85%);
+  display: flex;
+  align-items: center;
+  padding: 10px 42px;
+  gap: 10px;
+}
+
+.title {
+  font-size: 13px;
+  width: 70%;
+}
+
+.icon-duration img {
+  height: 30px;
+  width: 16px;
+  opacity: 0.7;
+}
+
+.musicas-album ul li div {
+  display: flex;
+  flex-direction: column;
+}
+
+.musicas-album ul {
+  display: flex;
+  flex-direction: column;
+  padding: 1px 40px;
+  gap: 10px;
+}
+
+.musicas-album h4,
+span {
+  font-family: CircularSp-Book;
+}
+
+.musicas-album h4 {
+  color: white;
+  font-weight: 400;
+}
+
+.musicas-album p {
+  font-weight: 200;
+  align-items: center;
+}
+
+.musicas-album ul li {
+  width: 60%;
+}
+
+.musicas-album span {
+  /* aspect-ratio: 1/1; */
+  font-size: 9px;
+  background-color: #b3b3b3;
+  color: #000000;
+  padding: 2px 4px;
+  line-height: 2px;
+  border-radius: 2px;
+}
+
+.icon-play img {
+  display: none;
+}
+
+.icon-play img {
+  height: 16px;
+  width: 16px;
+}
+
+/* .icon-play p {
+  filter: brightness(0.5) saturate(1.5);
+} */
+
+li:hover .icon-play p {
+  display: none;
+}
+
+li:hover .icon-play img {
+  display: block;
+  /* transform: scale(0.9); */
+  /* opacity: 0.4; */
+}
+
+.data-inf {
+  font-size: 12px;
+  padding: 20px 30px;
+}
+
+.texto-recomendation {
+  display: flex;
+  color: #fff;
+  padding: 2px 30px;
+}
+
+.texto-recomendation h3 {
+  width: 70%;
+}
+
+.texto-recomendation:hover h3 {
+  text-decoration: underline;
+}
+
+.recomendation-img {
+  padding: 2px 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.recomendation-img h4 {
+  font-weight: 400;
+  color: #fff;
+}
+
+.recomendation-img img {
+  height: 180px;
+  width: 180px;
+  border-radius: 5px;
+}
+
+.recomendation-img .play-music {
+  display: none;
+}
+
+.play-music img {
+  width: 50px;
+  height: 50px;
+}
+
+.inf-final {
+  padding: 80px 30px;
+  display: flex;
+  gap: 150px;
+}
+
+.inf-final h4 {
+  padding: 10px 0px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.inf-final div p {
+  gap: 50px;
+}
+
+.inf-final p:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.inf-politic {
+  display: flex;
+  gap: 20px;
+}
+
+.inf-politic p {
+  font-size: 14px;
+}
+
+.inf-politic p:hover {
+  font-weight: bold;
+}
+
+.last-div {
+  width: 20%;
+}
+
+.last-icons button img {
+  display: flex;
+  flex-direction: row;
+  height: 16px;
+  width: 16px;
+  background: none;
+}
+
+.last-icons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  background: #423e3e;
+  border: none;
+  border-radius: 100%;
 }
