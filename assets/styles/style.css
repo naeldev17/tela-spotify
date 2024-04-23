@@ -629,6 +629,10 @@ footer p {
   width: 72%;
 }
 
+.three-icons img:hover {
+  transform: scale(1.03);
+}
+
 .meio {
   background: rgb(7, 30, 96);
   background: radial-gradient(circle, rgba(7, 30, 96, 1) 35%, rgba(10, 29, 101, 1) 62%, rgba(6, 20, 89, 1) 73%);
@@ -738,6 +742,10 @@ li:hover .icon-play img {
   padding: 2px 30px;
   display: flex;
   gap: 30px;
+}
+
+.recomendation-img img:hover {
+  transform: scale(1.02);
 }
 
 .recomendation-img h4 {
@@ -877,9 +885,6 @@ li:hover .icon-play img {
     display: none;
   }
 
-  .three-icons {
-    padding: 10px 30px;
-  }
 
   .container-principal {
     overflow: hidden;
